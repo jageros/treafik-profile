@@ -13,10 +13,10 @@
 
 安装 Traefik 到 Kubernetes 集群中的资源清单文件我这里提前准备好了，直接执行下面的安装命令即可：
 ```
-$ kubectl apply -f https://www.qikqiak.com/k8strain/network/manifests/traefik/crd.yaml
-$ kubectl apply -f https://www.qikqiak.com/k8strain/network/manifests/traefik/rbac.yaml
-$ kubectl apply -f https://www.qikqiak.com/k8strain/network/manifests/traefik/deployment.yaml
-$ kubectl apply -f https://www.qikqiak.com/k8strain/network/manifests/traefik/dashboard.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/jageros/treafik-profile/main/crd.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/jageros/treafik-profile/main/rbac.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/jageros/treafik-profile/main/deployment.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/jageros/treafik-profile/main/dashboard.yaml
 ```
 其中 deployment.yaml 我这里是固定到 master 节点上的，如果你需要修改可以下载下来做相应的修改即可。我们这里是通过命令行参数来做的静态配置：
 
